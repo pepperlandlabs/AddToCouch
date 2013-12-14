@@ -317,7 +317,7 @@
 
 - (IBAction)presentQueue:(id)sender {
     NSString *urlString;
-    urlString = [NSString stringWithFormat:@"%@%@", @"http://10.0.0.11:8080/remote/", self.roomname.text];
+    urlString = [NSString stringWithFormat:@"%@%@", @"http://addtocouch.com/remote/", self.roomname.text];
     NSURL *URL = [NSURL URLWithString:urlString];
 	SVModalWebViewController *webViewController = [[SVModalWebViewController alloc] initWithURL:URL];
 	webViewController.modalPresentationStyle = UIModalPresentationPageSheet;
